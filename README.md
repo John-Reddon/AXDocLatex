@@ -1,4 +1,4 @@
-# Comment utiliser le template ADoc
+# Comment utiliser le template AXDoc
 C'est assezsimple, tout est déjà automatisé
 
  - téléchargez le dossier AXDoc
