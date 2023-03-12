@@ -1,4 +1,4 @@
-* Comment utiliser le template ADoc
+# Comment utiliser le template ADoc
 C'est assezsimple, tout est déjà automatisé
 
  - téléchargez le dossier AXDoc
@@ -27,7 +27,7 @@ C'est assezsimple, tout est déjà automatisé
 
 *attention, le title_page_logo doit être à côté du .tex pour fonctionner !*
 
-VOus n'avez pas besoin de mettre la commande `\begin{document}` car elle se trouve dans le template.
+Vous n'avez pas besoin de mettre la commande `\begin{document}` car elle se trouve dans le template.
 
 Note importante : à la première compilation, il se peut que le module qui gère le fond fasse n'importe quoi... il faut alors compiler deux fois de suite.
 
@@ -37,7 +37,7 @@ Actuellement, c'est la v1, du 12/03/2023 !
 
 Enjoy
 
-* Changelog
+# Changelog
 **12/03/2023**
  - dépôt initial
 
