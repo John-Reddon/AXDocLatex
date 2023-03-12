@@ -1,0 +1,86 @@
+\documentclass[a4paper, 12pt]{extarticle}
+
+% Enter all fields in the following and run the compilation TWICE [!]
+\newcommand{\docType}{AFF XXX}
+\newcommand{\client}{CLIENT}
+\newcommand{\projectName}{Contrôle avec des caméras}
+\newcommand{\documentName}{Essais du template \LaTeX}
+\newcommand{\redactor}{J. LEDIG}
+\newcommand{\titlePageLogo}{title_page_logo.png}
+
+% You can remove that package, but add needed packages here, before using the \input command!
+\usepackage{blindtext}
+\input{AXDoc/AXPreamble}
+
+
+
+\section{Une section}
+\subsection{Une sous section}
+\blindtext[1]
+\subsection{Ajout d'une image}
+Voyons comment ajouter une image, la figure \ref{img:Une_image} dans ce template :
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.5\textwidth]{title_page_logo.png}
+\caption{La légende}\label{img:Une_image}
+\end{figure}
+
+\subsection{Ajout d'une équation}
+Même si nous n'utilisons pas souvent des équations complexes, il est important de savoir comment les intégrer dans un document, 
+\begin{equation}\label{eq:equation_einstein}
+G_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+\end{equation}
+Ici, \eqref{eq:equation_einstein} est l'équation d'Einstein. Le terme de gauche est le tenseur métrique définissant la courbure de l'espace-temps en fonction du tenseur énergie-masse. 
+
+\subsection{Ajout d'un morceau de code}
+On peut entrer du code avec la commande \texttt{lstlinsting}, voir code \ref{code:mon_code}. 
+\begin{lstlisting}[caption={Use logging}, label={code:mon_code}]
+import os
+import numpy as np
+
+% Use logging because la camera chauffe
+print("logging")
+\end{lstlisting}
+
+\subsection{Ajout d'un tableau}
+On peut également écrire un tableau, d'après le tableau \ref{tab:mon_tableau} : 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lllll}
+        \toprule
+        \multirow{2}{*}{Models} & \multicolumn{3}{c}{Metric 1} & Metric 2\\
+        \cmidrule{2-4} \cmidrule{5-5} \\
+        {} & precision & recall & F-score  & R@10 \\
+        \midrule
+        model 1 & 0.67  & 0.8 & 0.729  & 0.75 \\
+        model 2 & 0.8 & 0.9 & 0.847 & 0.85 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Un tableau avec des données très importantes !}\label{tab:mon_tableau}
+\end{table}
+
+\section{Comment utiliser ce template ?}
+C'est assez simple : 
+\begin{itemize}
+\item Téléchargez le dossier "AXDoc",
+\item à côté de ce doc, écrivez un fichier tex avec ces informations :
+\begin{verbatim}
+\documentclass[a4paper, 12pt]{extarticle}
+
+% Enter all fields in the following and run the compilation TWICE [!]
+\newcommand{\docType}{AFF XXX}
+\newcommand{\client}{CLIENT}
+\newcommand{\projectName}{Contrôle avec des caméras}
+\newcommand{\documentName}{Essais du template \LaTeX}
+\newcommand{\redactor}{J. LEDIG}
+\newcommand{\titlePageLogo}{title_page_logo.png}
+
+% You can remove that package, but add needed packages here, before using the \input command!
+\usepackage{blindtext}
+\input{AXDoc/AXPreamble}
+\end{verbatim}
+\item Compilez 2 fois, et c'est parti !
+\end{itemize}
+
+
+\end{document}
