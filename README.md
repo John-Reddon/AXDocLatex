@@ -31,7 +31,7 @@ Vous n'avez pas besoin de mettre la commande `\begin{document}` car elle se trou
 
 Note importante : à la première compilation, il se peut que le module qui gère le fond fasse n'importe quoi... il faut alors compiler deux fois de suite.
 
-* Note de version
+# Note de version
 
 Actuellement, c'est la v1, du 12/03/2023 !
 
