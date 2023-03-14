@@ -13,7 +13,7 @@ C'est assezsimple, tout est déjà automatisé
 \newcommand{\client}{CLIENT}
 \newcommand{\projectName}{Contrôle avec des caméras}
 \newcommand{\documentName}{Essais du template \LaTeX}
-\newcommand{\redactor}{J. LEDIG}
+\newcommand{\redactor}{M. Dupont}
 \newcommand{\titlePageLogo}{title_page_logo.png}
 
 % You can remove that package, but add needed packages here, before using the \input command!
@@ -38,6 +38,9 @@ Actuellement, c'est la v1, du 12/03/2023 !
 Enjoy
 
 # Changelog
+**14/03/2023**
+ - modifications de la police
+ 
 **12/03/2023**
  - dépôt initial
 
