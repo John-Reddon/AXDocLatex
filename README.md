@@ -29,18 +29,23 @@ C'est assezsimple, tout est déjà automatisé
 
 Vous n'avez pas besoin de mettre la commande `\begin{document}` car elle se trouve dans le template.
 
-Note importante : à la première compilation, il se peut que le module qui gère le fond fasse n'importe quoi... il faut alors compiler deux fois de suite.
+Note importante : à la première compilation, il se peut que le module qui gère le fond fasse n'importe quoi... il faut alors compiler deux fois de suite (cet effet est doit être corrigé avec une version > 2)
 
-# Note de version
+# To Do :
+ - création du template AXNote qui permet de créer des notes (rapport d'intervention, table d'échange, etc.)
+ - mettre à jour le style des titres pour coller à la charte AX disponible dans le gabarit MS Word.
 
-Actuellement, c'est la v1, du 12/03/2023 !
+Remarque : un document rédigé avec la version actuelle sera tout à fait compatible avec les version futures. Il suffira de modifier le dossier AXDoc à côté de vos fichiers .tex.
 
-Enjoy
 
 # Changelog
-**14/03/2023**
- - modifications de la police
- 
-**12/03/2023**
+**25/03/2023**, version 2.0
+ - les headers et footers sont maintenant gérés par \LaTeX, ce qui limite les erreur de positionnement, de débordement de texte, etc.
+ - ajout du package float pour mieux gérer les images flottantes.
+
+**14/04/2023**, version 1.1
+ - modification de la police
+
+**12/03/2023**, version 1.0
  - dépôt initial
 
